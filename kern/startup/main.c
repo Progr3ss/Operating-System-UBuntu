@@ -50,7 +50,7 @@
 #include <test.h>
 #include <version.h>
 #include "autoconf.h"  // for pseudoconfig
-#include "hello.h"
+
 
 /*
  * These two pieces of data are maintained by the makefiles and build system.
@@ -100,9 +100,8 @@ boot(void)
 	kprintf("OS/161 base system version %s\n", BASE_VERSION);
 	kprintf("%s", harvard_copyright);
 	kprintf("\n");
-	
-	hello();
-	kprintf("This is martin chibwe's system version %s (%s #%d)\n", 
+
+	kprintf("This is Martin Chibwe's Computer  %s (%s #%d)\n", 
 		GROUP_VERSION, buildconfig, buildversion);
 	kprintf("\n");
 
