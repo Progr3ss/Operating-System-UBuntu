@@ -46,8 +46,6 @@
 #include "opt-sfs.h"
 #include "opt-net.h"
 #include "simpleTest.h"
-
-
 /*
  * In-kernel menu and command dispatcher.
  */
@@ -454,7 +452,7 @@ cmd_opsmenu(int n, char **a)
 }
 
 static const char *testmenu[] = {
-        "[mt]  Martin test                   ",                    
+	"[st]  Simple test                   ",
 	"[at]  Array test                    ",
 	"[bt]  Bitmap test                   ",
 	"[km1] Kernel malloc test            ",
@@ -566,7 +564,7 @@ static struct {
 	{ "kh",         cmd_kheapstats },
 
 	/* base system tests */
-	{ "mt",         simpleTest},
+	{ "st",          simpleTest},
 	{ "at",		arraytest },
 	{ "bt",		bitmaptest },
 	{ "km1",	malloctest },

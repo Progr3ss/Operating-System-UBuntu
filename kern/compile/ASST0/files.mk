@@ -78,6 +78,7 @@ SRCS.MACHINE.mips+=$(KTOP)/vm/copyinout.c
 SRCS+=$(KTOP)/proc/proc.c
 SRCS+=$(KTOP)/startup/main.c
 SRCS+=$(KTOP)/startup/menu.c
+SRCS+=$(KTOP)/startup/simpleTest.c
 SRCS.PLATFORM.sys161+=$(KTOP)/arch/mips/locore/cache-mips161.S
 SRCS.PLATFORM.sys161+=$(KTOP)/arch/mips/locore/exception-mips1.S
 SRCS.PLATFORM.sys161+=$(KTOP)/arch/mips/vm/tlb-mips1.S
